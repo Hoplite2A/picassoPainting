@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Interest Form</title>
+    <link rel="stylesheet" type="text/css" href="./external.css" />
+  </head>
+  <body class="formPage">
+    <header>
+      <h1>Purchase Form</h1>
+    </header>
+    <form>
+      <div class="personalInfo">
+        <h2>Contact Information:</h2>
+        <div class="nameInfo  tablet mobile ">
+          <div>
+            <label for="fname">First Name: </label>
+            <input type="text" id="fname" name="fname" />
+          </div>
+          <div>
+            <label for="mname">Middle Name: </label>
+            <input type="text" id="mname" name="mname" />
+          </div>
+          <div>
+            <label for="lname">Last Name: </label>
+            <input type="text" id="lname" name="lname" />
+          </div>
+          <div>
+            <label for="suffix">Suffix: </label>
+            <select name="suffix" id="suffix">
+              <option value="senior">Sr.</option>
+              <option value="junior">Jr.</option>
+              <option value="doctor">Dr.</option>
+              <option value="phd">Ph.D</option>
+              <option value="esquire">Esq.</option>
+            </select>
+          </div>
+        </div>
+        <h4>Mailing Address:</h4>
+        <div class="mailingAddress1  tablet mobile ">
+          <div>
+            <label for="streetAddress">Street Address: </label>
+            <input
+              type="text"
+              id="streetAddress"
+              name="streetAddress"
+              size="25"
+            />
+          </div>
+          <div>
+            <label for="apartmentNumber">APT #: </label>
+            <input
+              type="text"
+              id="apartmentNumber"
+              name="apartmentNumber"
+              maxlength="6"
+              size="6"
+            />
+          </div>
+          <div>
+            <label for="city">City: </label>
+            <input type="text" id="city" name="city" />
+          </div>
+          <div>
+            <label for="state">State:</label>
+            <select name="state" id="state" autocomplete="on">
+              <option value=""></option>
+              <option value="Alabama">AL</option>
+              <option value="Alaska">AK</option>
+              <option value="Arkansas">AR</option>
+              <option value="Arizona">AZ</option>
+              <option value="California">CA</option>
+              <option value="Colorado">CO</option>
+              <option value="Cenneticut">CT</option>
+              <option value="Deleware">DE</option>
+              <option value="District of Columbia">DC</option>
+              <option value="Florida">FL</option>
+              <option value="Hawaii">HI</option>
+              <option value="Idaho">ID</option>
+              <option value="Illinois">IL</option>
+              <option value="Indiana">IN</option>
+              <option value="Iowa">IA</option>
+              <option value="Kansas">KS</option>
+              <option value="Louisiana">LS</option>
+              <option value="Maine">ME</option>
+              <option value="Maryland">MD</option>
+              <option value="Massachusetts">MA</option>
+              <option value="Michigan">MI</option>
+              <option value="Minnesota">MN</option>
+              <option value="Mississippi">MS</option>
+              <option value="Missouri">MO</option>
+              <option value="Montana">MT</option>
+              <option value="Nebraska">NE</option>
+              <option value="Nevada">NV</option>
+              <option value="New Hampshire">NH</option>
+              <option value="New Jersey">NJ</option>
+              <option value="New Mexico">NM</option>
+              <option value="New York">NY</option>
+              <option value="North Carolina">NC</option>
+              <option value="North Dakota">ND</option>
+              <option value="Ohio">OH</option>
+              <option value="Oklahoma">OK</option>
+              <option value="Oregon">OR</option>
+              <option value="Pennsylvania">PA</option>
+              <option value="Rhode Island">RI</option>
+              <option value="South Carolina">SC</option>
+              <option value="South Dakota">SD</option>
+              <option value="Tennessee">TN</option>
+              <option value="Texas">TX</option>
+              <option value="Utah">UT</option>
+              <option value="Vermont">VT</option>
+              <option value="Virginia">VA</option>
+              <option value="Washington">WA</option>
+              <option value="West Virginia">WV</option>
+              <option value="Wisconsin">WI</option>
+              <option value="Wyoming">WY</option>
+            </select>
+          </div>
+          <div>
+            <label for="zip">ZIP: </label>
+            <input type="text" id="zip" name="zip" maxlength="5" size="5" />
+          </div>
+        </div>
+        <div class="mailingAddress2  tablet mobile ">
+          <div>
+            <label for="hPhone">Home #: </label>
+            <input type="number" id="hPhone" name="hPhone" />
+          </div>
+          <div>
+            <label for="mPhone">Cell #: </label>
+            <input type="number" id="mPhone" name="mPhone" />
+          </div>
+          <div>
+            <label for="email">Email Address: </label>
+            <input type="number" id="email" name="email" />
+          </div>
+        </div>
+      </div>
+      <div class="itemInfo tablet mobile">
+        <div class="itemPurchase1 tablet mobile "style="margin: none;"">
+          <h2>Selected Items:</h2>
+          <ol>
+            <li>
+                <label class="itemPurchaseList" for="item1"></label>
+              <input type="text" id="item1" name="item1" />
+            </li>
+            <li>
+              <label class="itemPurchaseList" for="item2"></label>
+              <input type="text" id="item2" name="item2" />
+            </li>
+            <li>
+              <label class="itemPurchaseList" for="item3"></label>
+              <input type="text" id="item3" name="item3" />
+            </li>
+            <li>
+              <label class="itemPurchaseList" for="item4"></label>
+              <input type="text" id="item4" name="item4" />
+            </li>
+            <li>
+              <label class="itemPurchaseList" for="item5"></label>
+              <input type="text" id="item5" name="item5" />
+            </li>
+          </ol>
+        </div>
+        <div class="itemOptions tablet mobile mobile.Min">
+          <table>
+            <tr>
+              <th>Item #</th>
+              <th>Size Options</th>
+              <th>Artist</th>
+            </tr>
+            <tr class="dataRow ">
+              <td>A165TZ98</td>
+              <td>4' x 2'</td>
+              <td>Bansky</td>
+            </tr>
+            <tr class="dataRow">
+              <td>A165TZ99</td>
+              <td>6' x 4'</td>
+              <td>Shepard Fairey</td>
+            </tr>
+            <tr class="dataRow">
+              <td>A165UA01</td>
+              <td>8' x 6'</td>
+              <td>Keith Haring</td>
+            </tr>
+            <tr class="dataRow">
+              <td>A165UA02</td>
+              <td>10' x 8'</td>
+              <td>Bansky</td>
+            </tr>
+            <tr class="dataRow">
+                <td>A165UA03</td>
+                <td>12' x 10'</td>
+                <td>Bansky</td>
+            </tr>
+          </table>
+        </div>
+    </div>
+    <div class="billingInfo">
+        <h2>
+            Billing Info:
+        </h2>
+        <div class="billingInfoS1 tablet mobile ">
+            <div>
+                <label for="creditCardNumber">Card #: </label>
+                <input type="text" id="creditCardNumber" name="creditCardNumber" />
+            </div>
+            <div class="expiration  tablet mobile ">
+                <div class="expDate1  tablet mobile ">
+                    <label class="expirationDateMonth" for="expirationDateMonth">Exp.</label>
+                    <input type="number" name="expirationDateMonth" id="expirationDateMonth" min="01" max="12" size="2"/>
+                </div>
+                <div class="expDate2  tablet mobile ">
+                    <label class="expDate2" for="expirationDateYear">/</label>
+                    <input type="number" name="expirationDateYear" id="expirationDateYear" min="01" max="99" size="2"/>
+                </div>
+            </div>
+            <div>
+                <label for="CCV #">CCV #: </label>
+                <input type="text" id="CCV #" name="CCV #" />
+            </div>
+        </div>
+        <div class="billingInfoCardName">
+            <label for="billingCardName">Name on Card: </label>
+            <input type="text" name="billingCardName" id="billingCardName" size="50"/>
+        </div>
+    </div>
+    </div>
+    <div class="purchaseSubmission">
+        <button type="submit">Submit Order</button>
+    </div>
+    </form>
+  </body>
+</html>

@@ -1,0 +1,397 @@
+/*******MEDIA QUERIES*******/
+
+/* TABLET-DISPLAY */
+@media (max-width: 1100px) {
+  .tablet {
+    display: block;
+  }
+  .mobile {
+    display: none;
+  }
+}
+/* MOBILE-DISPLAY */
+@media (max-width: 781px) {
+  .tablet {
+    display: none;
+  }
+  .mobile {
+    display: block;
+  }
+}
+
+section.containers {
+  margin: 0 auto;
+  max-width: 97%;
+  min-width: 1025px;
+  min-height: 1050px;
+  z-index: -1;
+}
+div.header-container > .headerPart {
+  height: 100px;
+  width: 32%;
+  /* border: 1px solid black; */
+  /* display: inline-block; */
+  /* margin-right: 18px; */
+  background-color: rgb(9, 138, 127);
+  display: flex;
+  /* align-items: flex-start; */
+}
+.headerPart.part3 {
+  display: flex;
+  justify-content: right;
+}
+div.main-container > .mainPart {
+  height: 200px;
+  width: 100%;
+  background-color: rgb(9, 138, 127);
+  z-index: -1;
+  display: flex;
+  flex-direction: row;
+}
+div.footer-container > .footerPart {
+  height: 15px;
+  width: 100%;
+  background-color: rgb(162, 214, 20);
+}
+.header-container {
+  /* border: 2px solid black; */
+  /* margin: 0px 5px; */
+  padding-top: 10px;
+  /* padding-left: 5px; */
+  /* padding-right: 5px; */
+  padding-bottom: 2.5px;
+  display: flex;
+  justify-content: space-between;
+}
+.main-container {
+  /* border: 2px solid black; */
+  margin-top: 20px;
+  padding: 2.5px 0px;
+  /* display: flex; */
+  /* justify-content: center; */
+  margin: 0 auto;
+}
+.footer-container {
+  /* border: 1px solid black; */
+  /* padding: 2px 10px; */
+  padding-top: 2.5px;
+  display: flex;
+  justify-content: center;
+}
+.tree1 {
+  display: flex;
+  width: 0px;
+  height: 0px;
+  border-left: 100px solid transparent;
+  border-right: 100px solid transparent;
+  border-bottom: 240px solid rgb(9, 107, 6);
+  margin-top: 65px;
+  margin-bottom: 15px;
+  margin-right: 115px;
+  float: right;
+  position: absolute;
+  z-index: 1;
+}
+.tree2 {
+  display: flex;
+  width: 0px;
+  height: 0px;
+  border-left: 80px solid transparent;
+  border-right: 80px solid transparent;
+  border-bottom: 180px solid rgb(162, 214, 20);
+  float: right;
+  position: absolute;
+  margin-right: 0%;
+  margin-top: 125px;
+  z-index: 2;
+}
+.big {
+  border-radius: 50%;
+  width: 65px;
+  height: 65px;
+}
+.small {
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+}
+.red {
+  background-color: rgb(226, 108, 87);
+}
+.yellow {
+  background-color: rgb(238, 184, 69);
+}
+.headerPart.part1 {
+  display: flex;
+  flex-direction: row;
+}
+.columnFlex > div {
+  display: flex;
+  flex-direction: column;
+}
+.columnFlex .red.one {
+  display: flex;
+  position: absolute;
+  float: left;
+  margin-top: 10px;
+  margin-left: 2.5%;
+}
+.columnFlex .red.two {
+  display: flex;
+  position: absolute;
+  float: left;
+  margin-top: 84px;
+  margin-left: 2.5%;
+}
+.headerPart.part1 .big.yellow.one {
+  display: flex;
+  position: absolute;
+  margin-top: 17.5px;
+  margin-bottom: 17.5px;
+  margin-left: 17%;
+}
+.headerPart.part2 {
+  display: flex;
+  flex-direction: row;
+}
+.headerPart.part1 .big.red.one {
+  display: flex;
+  position: absolute;
+  margin-top: 70px;
+  margin-left: calc(33% - 32.5px);
+}
+.headerPart.part2 .small.red.one {
+  position: absolute;
+  margin-top: 20px;
+  margin-left: 5%;
+}
+.mainPart .small.yellow.one {
+  position: absolute;
+  float: left;
+  margin-left: 18%;
+  margin-top: 4%;
+}
+img.one {
+  display: flex;
+  position: absolute;
+  float: left;
+  margin-top: 141px;
+}
+img.two {
+  display: flex;
+  position: absolute;
+  float: left;
+  margin-top: 141px;
+  margin-left: 100px;
+}
+img.three {
+  display: flex;
+  position: absolute;
+  float: left;
+  margin-top: 141px;
+  margin-left: 200px;
+}
+
+/************************** 
+
+
+FORM FORMATTING
+
+
+ **************************/
+
+body.formPage {
+  background-color: rgb(255, 255, 255);
+}
+header {
+  padding-bottom: 19px;
+  text-align: center;
+}
+h2 {
+  text-align: left;
+  padding-left: 2%;
+}
+.itemPurchase1 > h2 {
+  padding-bottom: 10px;
+}
+.personalInfo {
+  width: 100%;
+  text-align: center;
+  border: 2px solid black;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  background-color: rgb(161, 161, 161);
+}
+.itemInfo {
+  width: calc(100% - 15px);
+  margin-top: 15px;
+  text-align: center;
+  border: 2px solid black;
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  background-color: rgb(161, 161, 161);
+}
+.nameInfo.mobile,
+.mailingAddress1.mobile,
+.mailingAddress2.mobile {
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  flex-wrap: wrap;
+  margin-left: 25px;
+  padding-left: 15px;
+  margin-right: 25px;
+}
+.itemInfo.mobile {
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  flex-wrap: wrap;
+  padding-left: 15px;
+  /* margin-right: 25px; */
+}
+.nameInfo.tablet,
+.mailingAddress1.tablet,
+.mailingAddress2.tablet,
+.itemOptions.tablet,
+.itempurchase1.tablet,
+.billingInfo.tablet {
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  margin-left: 25px;
+  padding-left: 15px;
+  margin-right: 25px;
+}
+.nameInfo,
+.mailingAddress1,
+.mailingAddress2,
+.itemInfo,
+.billingInfo {
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  /* margin-left: 25px; */
+  padding-left: 15px;
+  margin-right: 25px;
+}
+/* .itemOptions.mobile {
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  flex-wrap: wrap;
+  margin-left: 25px;
+  padding-left: 15px;
+  margin-right: 25px;
+} */
+
+.billingInfo {
+  margin-left: 0;
+  width: calc(100% - 15px);
+  margin-top: 15px;
+  text-align: center;
+  /* border: 2px solid black; */
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  background-color: rgb(161, 161, 161);
+  border: 2px solid black;
+}
+.billingInfoS1 {
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+}
+.personalInfo > h4 {
+  text-align: left;
+  margin-left: 25px;
+  margin-bottom: 2px;
+}
+.mailingAddress1 {
+  border: 1px solid black;
+  border-bottom: none;
+}
+.mailingAddress2 {
+  border: 1px solid black;
+  border-top: none;
+  margin-bottom: 15px;
+}
+.itemOptions {
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+}
+div.itemPurchase1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  margin-left: 25px;
+  text-align: left;
+}
+div.itemPurchase2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  margin-left: 25px;
+  text-align: left;
+}
+.billingInfoS1.mobile {
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  margin-left: 25px;
+}
+div.expiration {
+  display: flex;
+  flex-direction: row;
+}
+.billingInfoCardName {
+  margin-left: 25px;
+  text-align: left;
+}
+input,
+select {
+  margin-top: 15px;
+  margin-bottom: 15px;
+  margin-right: 25px;
+  font-weight: 500;
+}
+li > input {
+  margin: 1px 25px 1px 0px;
+}
+table {
+  border: 1px solid black;
+  margin-top: 70px;
+  margin-bottom: 15px;
+  margin-right: 15px;
+}
+th {
+  height: 16px;
+  width: 275px;
+  margin-right: 20px;
+}
+
+td {
+  margin-right: 20px;
+  height: 14px;
+}
+.expDate1 > input {
+  margin-right: 5px;
+}
+label.expDate1 > h3 {
+  margin-right: none;
+  display: inline-block;
+}
+.purchaseSubmission {
+  margin-top: 15px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+button {
+  font-size: 20px;
+  font-weight: bold;
+  border: 2px solid black;
+}
